@@ -70,33 +70,65 @@ h2 {
     font-size: 18px;
 }
 
-/* SKILLS */
-.skills ul {
-    list-style: none;
-    padding: 0;
+/* SKILLS - CARDS DESIGN */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.skills li {
-    padding: 5px 0;
-    font-size: 18px;
+.skill-card {
+    background: #f0f3ff;
+    border-left: 5px solid #0033cc;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0033cc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
 }
 
-/* PROJECT CARD */
+.skill-card:hover {
+    background: #e7ecff;
+    transform: translateY(-3px);
+}
+
+/* PROJECTS SECTION */
+.projects {
+    padding: 50px 25px;
+}
+
 .project-card {
     background: #f5f7ff;
+    border-left: 5px solid #0033cc;
     padding: 20px;
     border-radius: 12px;
-    margin-top: 15px;
-    text-align: left;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    background: #eef2ff;
 }
 
 .project-card h3 {
-    margin-top: 0;
     color: #0033cc;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
-/* CONTACT */
-.contact p {
-    font-size: 18px;
+/* FOOTER */
+footer {
+    background: #0033cc;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 500;
 }
